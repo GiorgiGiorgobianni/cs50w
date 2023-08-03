@@ -7,9 +7,25 @@
     <link rel="stylesheet" href="./style/style.css">
 </head>
 <body>
+    <nav>
+        <div class="links">
+            <ul>
+                <li>Google Search</li>
+                <li>Image Search</li>
+                <li>Advanced Search</li>
+            </ul>
+        </div>
+    </nav>
+    <div class="logo">
+        <img src="./style/logo.png" alt="google">
+    </div>
     <form action="https://google.com/search">
         <input id="search-bar"type="text" name="q">
-        <input id="search-button"type="submit" value="Google Search">
+        <div class="search-buttons">
+            <input id="search-button"type="submit" value="Google Search">
+            <input id="search-button"type="submit" value="I'm feeling lucky">
+        </div>
+            
     </form>
 </body>
 </html>

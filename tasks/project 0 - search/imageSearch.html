@@ -3,18 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Search</title>
-    <link rel="stylesheet" href="./style/style.css">
+    <title>Document</title>
+    <link rel="stylesheet" href="style/style.css">
 </head>
-<body>
+<body> 
     <nav>
         <div class="left-nav">
             
         </div>
         <div class="links">
             <ul>
-                <li><a href="#">Google Search</a></li>
-                <li><a href="imageSearch.html">Image Search</a></li>
+                <li><a href="index.html">Google Search</a></li>
+                <li><a href="#">Image Search</a></li>
                 <li><a href="advancedSearch.html">Advanced Search</a></li>
                 
             </ul>
@@ -22,12 +22,13 @@
     </nav>
     <div class="logo">
         <img src="./style/logo.png" alt="google">
+        <span>Images</span>
     </div>
     <form action="https://google.com/search" method="get">
-        <input id="search-bar" type="text" name="q">
+        <input id="search-bar"type="text" name="q" >
+        <input type="hidden" name="tbm" value="isch">
         <div class="search-buttons">
-            <input id="search-button"type="submit" value="Google Search">
-            <input id="search-button" value="I'm Feeling Lucky" aria-label="I'm Feeling Lucky" id="lucky" name="btnI" type="submit" data-ved="0ahUKEwiNm6S0jYLrAhXslnIEHYv2B30QnRsIDg">
+            <input id="search-button"type="submit" value="Image Search">
         </div>
             
     </form>

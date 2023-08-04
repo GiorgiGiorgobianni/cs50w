@@ -18,9 +18,9 @@ form{
     background:transparent;
     outline:none;
     border-radius:24px;
-    width: 40%;
+    width: 582px;
     border:1px solid #dfe1e5;
-    height:44px;
+    height:46px;
     padding-left:20px;
 
 }
@@ -58,32 +58,110 @@ form{
 
 .logo{
     display: flex;
-    justify-content: center;
-    height:92px;
+    flex-direction: column;
+    align-items: center;
+
+    height:290px;
     width:100%;
+}
+
+.logo img{
+    max-height:92px;
+    width:272px;
+    margin-top:auto;
+}
+.logo span{
+    height:10px;
+    position:relative;
+    left:110px;
+    top:-18px;
+    color:#4487f6;
+    font: 16px/16px roboto-regular, arial, sans-serif;
 }
 
 nav{
     width:100%;
     height:100px;
     display:flex;
-    flex-direction: row-reverse;
+}
+
+.left-nav{
+    display:flex;
+    flex-direction: column;
+    align-self:flex-start;
+    width:75%;
+}
+.nav-logo img{
+    position:absolute;
+    width:74px;
+    height:24px;
+    top:20px;
+    left:15px;
+}
+.subtitle{
+    padding-top:50px;
+    padding-left:50px;
 }
 .links{
-    width: 50%;
+    display:flex;
+    align-self:flex-end;
+    align-items:center; 
+    width: 25%;
+    
     
 }
 .links ul{
     width:100%;
     display:flex;
-    float:right;
-    padding-top:25px;
-    padding-right:50px;
     list-style: none;
-
-    font-size:13px;
+    justify-content: space-around;
+    align-items:center; 
+    font-size:14px;
 }
 
-.link ul li{
+.links ul li{
+    padding-top:20px;
     padding-right:2px;
+    line-height:24px;
+}
+
+a{
+    height:20px;
+    color:black;
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
+}
+.advanced-form{
+    margin-top:100px;
+}
+
+.advanced-form form{
+    display:flex;
+    flex-direction: column;
+    width:50%;
+}
+.left-form{
+
+}
+.advanced-form{
+    width:70%;
+}
+.advanced-line{
+    display:flex;
+    align-items:center;
+    flex-direction: row;
+    justify-content: space-between;
+    width:100%;
+    padding-top:10px;
+    height:13%;
+    font-size:14px;
+    padding-left:auto;
+    
+}
+
+hr{
+    height:1px;
+    border-bottom: transparent;
 }

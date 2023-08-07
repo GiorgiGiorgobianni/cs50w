@@ -27,7 +27,7 @@
             </ul>
         </div>
     </nav>
-    <hr>
+    <hr style="margin-top:35px; border-width: .5px 0px 0px 0px; border-color:#ebebeb">
     <div class="advanced-form">
         <form action="https://www.google.com/search" method="get">
             <div class="left-form">
@@ -49,14 +49,19 @@
                     <input type="text" name="as_eq" />
                 </div>
                 <div class="advanced-line">
-                    <label>Numbers in the range:</label>
-                    <input type="text" name="as_nlo" style="width:192px;"/>
-                    <label>-till</label>
-                    <input type="text" name="as_nhi" style="width:192px;" />
+                    <div>
+                        <label>Numbers in the range:</label>
+                    </div>
+                    <div style="display:flex;flex-direction: row;">
+                        <input type="text" name="as_nlo" style="width:278px;"/>
+                        <label>-till</label>
+                        <input type="text" name="as_nhi" style="width:278px;" />
+                    </div>
+
                 </div>
-                <hr style="margin-top:35px; border-left:0px;border-right:0px;">
-                <label>Then squeeze...</label>
-                <div class="advanced-line">
+                <hr style="margin-top:25px; border-width: .5px 0px 0px 0px; border-color:#ebebeb">
+                <label style="margin-top:25px">Then squeeze...</label>
+                <div class="advanced-line" >
                     <label>Language:</label>
                     <select id="Language" name="lr">
                         <option value="">in any language</option>
@@ -128,15 +133,16 @@
                     </select>
                 </div>
                 <div class="advanced-line">
-                    <label>Usage rights:</label>
+                    <label><a style=" display:flex; align-items:center;color: #12c;"href="https://support.google.com/websearch/answer/29508?hl=ka&visit_id=638270438397314799-440474243&p=ws_images_usagerights&rd=1">Usage rights:</a></label>
                     <select id="Usage Rights" name="tbs">
                         <option value="">with any license</option>
-                        <option value="title">in the page title</option>
-                        <option value="body">in the text of the page</option>
-                        <option value="url">in the URL of the page</option>
-                        <option value="links">in page links</option>
+                        <option value="sur:f">Licensed for non-commercial use</option>
+                        <option value="sur:fc">Licensed for commercial use</option>
+                        <option value="sur:fm">Licencsed for non-commercial use and modification</option>
+                        <option value="sur:fmc">Licensed for commercial use and modification</option>
                     </select>
-                <div class="advanced-line">
+                </div>
+                <div class="btn-container">
                     <div class="right-align">
                       <input
                         type="submit"

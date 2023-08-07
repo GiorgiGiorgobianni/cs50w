@@ -138,15 +138,19 @@ a:hover{
 }
 
 .advanced-form form{
-    display:flex;
-    flex-direction: column;
-    width:50%;
-}
-.left-form{
 
 }
+
 .advanced-form{
-    width:70%;
+    display:flex;
+    flex-direction: column;
+    width:100%;
+}
+.left-form{
+    width:45%;
+    align-self: flex-start;
+    padding-left:50px;
+    
 }
 .advanced-line{
     display:flex;
@@ -154,11 +158,33 @@ a:hover{
     flex-direction: row;
     justify-content: space-between;
     width:100%;
-    padding-top:10px;
+    padding-top:20px;
     height:13%;
-    font-size:14px;
-    padding-left:auto;
+    font-size:12px;
     
+}
+.blue-button{
+    width:124px !important;
+    border-radius: 2px;
+    cursor: default;
+    font-size: 11px;
+    font-weight: bold;
+    text-align: center;
+    white-space: nowrap;
+    background-color:blue;
+}
+.advanced-line input, select{
+    height:25px;
+    width:572px;
+    border-radius: 1px;
+    border: 1px solid #d9d9d9;
+    border-top: 1px solid #c0c0c0;
+    font-size: 13px;
+    background-color: #fff;
+}
+.advanced-line label{   
+    display:flex;
+    align-items: center;
 }
 
 hr{

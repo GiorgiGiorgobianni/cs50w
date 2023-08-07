@@ -49,14 +49,102 @@
                     <input type="text" name="as_eq" />
                 </div>
                 <div class="advanced-line">
+                    <label>Numbers in the range:</label>
+                    <input type="text" name="as_nlo" style="width:192px;"/>
+                    <label>-till</label>
+                    <input type="text" name="as_nhi" style="width:192px;" />
+                </div>
+                <hr style="margin-top:35px; border-left:0px;border-right:0px;">
+                <label>Then squeeze...</label>
+                <div class="advanced-line">
+                    <label>Language:</label>
+                    <select id="Language" name="lr">
+                        <option value="">in any language</option>
+                        <option value="lang_ar">Arabic</option>
+                        <option value="lang_af">Afrikaans</option>
+                        <option value="lang_be">Belarusian</option>
+                        <option value="lang_gr">Greek</option>
+                        <option value="lang_bu">Bulgarian</option>
+                        <option value="lang_de">German</option>
+                    </select>
+                </div>
+                <div class="advanced-line">
+                    <label>Region:</label>
+                    <select id="Region" name="cr">
+                        <option value="">any region</option>
+                        <option value="countryAU">Australia</option>
+                        <option value="countryAT">Austria</option>
+                        <option value="countryAF">Afghanistan</option>
+                        <option value="countryAL">Albania</option>
+                        <option value="countryDZ">Algeria</option>
+                        <option value="countryAS">American Samoa</option>
+                    </select>
+                </div>
+                <div class="advanced-line">
+                    <label>Last update:</label>
+                    <select id="Last update" name="as_qdr">
+                        <option value="all">any time</option>
+                        <option value="d">past 24 hours</option>
+                        <option value="w">last week</option>
+                        <option value="m">last month</option>
+                        <option value="y">last year</option>
+                    </select>
+                </div>
+                <div class="advanced-line">
+                    <label>Site or domain:</label>
+                    <input type="text" name="as_sitesearch"/>
+                </div>
+                <div class="advanced-line">
+                    <label>word order:</label>
+                    <select id="Word order" name="as_occt">
+                        <option value="any">anywhere on the page</option>
+                        <option value="title">in the page title</option>
+                        <option value="body">in the text of the page</option>
+                        <option value="url">in the URL of the page</option>
+                        <option value="links">in page links</option>
+                    </select>
+                </div>
+                <div class="advanced-line">
+                    <label>File type:</label>
+                    <select id="Word order" name="as_fieltype">
+                        <option value="">in any format</option>
+                        <option value="pdf">Adobe Acrobat PDF (.pdf)</option>
+                        <option value="ps">Adobe Postscript(.ps)</option>
+                        <option value="dwf">Autodesk DWF (.dwf)</option>
+                        <option value="kml">Google Earth KML (.kml)</option>
+                        <option value="kmz">Google Earth KMZ (.kmz)</option>
+                        <option value="xls">Microsoft Excel (.xls)</option>
+                        <option value="kml">Google Earth KML (.kml)</option>
+                        <option value="ppt">Microsoft Powerpoint (.ppt)</option>
+                        <option value="doc">Microsoft Word (.doc)</option>
+                        <option value="rtf">Rich Text Format (.rtf)</option>
+                        <option value="swf">Shockwave Flash (.swf)</option>
+
+
+
+
+
+
+                    </select>
+                </div>
+                <div class="advanced-line">
+                    <label>Usage rights:</label>
+                    <select id="Usage Rights" name="tbs">
+                        <option value="">with any license</option>
+                        <option value="title">in the page title</option>
+                        <option value="body">in the text of the page</option>
+                        <option value="url">in the URL of the page</option>
+                        <option value="links">in page links</option>
+                    </select>
+                <div class="advanced-line">
                     <div class="right-align">
                       <input
                         type="submit"
                         class="blue-button"
-                        value="Google Advanced Search"
+                        value="Advanced Search"
                       />
                     </div>
-                  </div>
+                </div>
 
             </div>
             <div class="right-form">

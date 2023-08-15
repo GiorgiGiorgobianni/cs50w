@@ -1,0 +1,15 @@
+{% extends "encyclopedia/layout.html" %}
+
+{% block title %}
+    Encyclopedia
+{% endblock %}
+
+{% block body %}
+    <h1>{{ entryDetails.title }}</h1>
+
+    <p>{{ content }}</p>
+
+    {% with entrytitle=title %}
+        <button type="submit" name="edit" value={{entry}}>Edit edntry</button>
+    {% endwith %}
+{% endblock %}

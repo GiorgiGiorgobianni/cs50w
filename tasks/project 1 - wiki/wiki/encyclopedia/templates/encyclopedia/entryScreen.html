@@ -7,5 +7,15 @@
 {% block body %}    
 
     {{entryContent|safe}}
+    <form action="{% url 'edit' %}" method = "POST">
+        {% csrf_token %}
+        
+        {% with title=title %}    
+        
+            <button type="submit"  name = "edit" value="{{title}}" id ="edit">edit</button>
+        
+        {%endwith%}
+
+    </form>
 
 {% endblock %}

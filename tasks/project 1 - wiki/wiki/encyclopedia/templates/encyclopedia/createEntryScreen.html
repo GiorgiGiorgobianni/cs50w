@@ -1,0 +1,21 @@
+{% extends "encyclopedia/layout.html" %}
+
+{% block title %}
+    Encyclopedia
+{% endblock %}
+
+{% block body %}    
+
+{% if exists %}
+<p>this entry already exists, click <a href="/wiki/{{title}}">here</a> to view<p>
+{% endif %}
+<div id="newEntry">
+    <form action="{% url 'newEntry' %}" method="post">
+        {% csrf_token %}
+        {{entryForm.as_p}}
+        <input type="submit" value="Save entry">
+    </form>
+</div>
+
+
+{% endblock %}

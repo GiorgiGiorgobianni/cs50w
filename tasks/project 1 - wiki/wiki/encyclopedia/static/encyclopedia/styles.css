@@ -36,3 +36,26 @@ textarea {
 .sidebar h2 {
     margin-top: 5px;
 }
+#newEntry{
+    width:400px;
+    height:500px;
+    display:flex;
+    flex-direction:column;
+
+}
+#newEntry p{
+    display:flex;
+    flex-direction:column;
+    
+}
+
+#newEntry p textarea{
+    height:200px;
+    width:auto;
+    border-radius:2px;
+    
+}
+#newEntry p input{
+    border-radius:2px;
+    
+}
